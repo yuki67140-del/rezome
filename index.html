@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زهرا | سایت شخصی</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- نوار بالا -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">زهرا</h1>
+
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="منو">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#home">خانه</a></li>
+          <li><a href="#about">درباره من</a></li>
+          <li><a href="#skills">مهارت‌ها</a></li>
+          <li><a href="#projects">پروژه‌ها</a></li>
+          <li><a href="#faq">سوالات</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- بخش معرفی -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="greeting">سلام، من</p>
+        <h2 class="name">زهرا هستم</h2>
+        <p class="tagline">طراح سایت و متخصص سئو 🌸</p>
+        <a href="#contact" class="btn">با من تماس بگیر</a>
+      </div>
+      <div class="hero-image">
+        <div class="circle">
+          <img src="./adam.png" alt="زهرا" class="my-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- درباره من -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">درباره من</h2>
+      <p class="about-text">
+        من زهرا هستم، عاشق طراحی و ساختن وب‌سایت‌های زیبا.
+        اینجا می‌تونی با مهارت‌ها و پروژه‌های من آشنا بشی.
+        خدمات من شامل <strong>طراحی سایت</strong> و <strong>سئو</strong> هست 🌸
+      </p>
+    </div>
+  </section>
+
+  <!-- مهارت‌ها -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">مهارت‌ها</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <div class="bar"><div class="fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="bar"><div class="fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="bar"><div class="fill" style="width: 60%"></div></div>
+        </div>
+        <div class="skill-card">
+          <h3>سئو (SEO)</h3>
+          <div class="bar"><div class="fill" style="width: 90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- پروژه‌ها -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">پروژه‌ها</h2>
+      <div class="projects-grid">
+
+        <!-- پروژه ۱ -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./emdadgaran.gif" alt="پروژه اول">
+          </div>
+          <h3>پروژه اول</h3>
+          <p>برای مشاهده پروژه امدادگران عاشورا روی دکمه زیر کلیک کنید </p>
+          <a href="project-1.html" class="project-view">مشاهده پروژه ↗</a>
+        </div>
+
+        <!-- پروژه ۲ -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./project-2.gif" alt="پروژه دوم">
+          </div>
+          <h3>پروژه دوم</h3>
+          <p>توضیح کوتاه درباره پروژه</p>
+          <a href="project-2.html" class="project-view">مشاهده پروژه ↗</a>
+        </div>
+
+        <!-- پروژه ۳ -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./project-3.gif" alt="پروژه سوم">
+          </div>
+          <h3>پروژه سوم</h3>
+          <p>توضیح کوتاه درباره پروژه</p>
+          <a href="project-3.html" class="project-view">مشاهده پروژه ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- سوالات متداول -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">سوالات متداول</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>چطور می‌تونم با تو همکاری کنم؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>کافیه با شماره‌ی ۰۹۳۶۳۷۰۷۷۱۳ تماس بگیری. در اسرع وقت پاسخ می‌دم 🌸</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>چه خدماتی ارائه می‌دی؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>طراحی سایت و سئو 🎨🚀 از ساخت سایت شخصی و فروشگاهی تا بهینه‌سازی برای موتورهای جستجو.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>مدت زمان ساخت یک پروژه چقدره؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>بستگی به پروژه داره ولی معمولاً بین ۳ تا ۱۴ روز کاری ⏱️</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>هزینه چطور محاسبه می‌شه؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>برای اطلاع از قیمت، تماس بگیر تا با بررسی دقیق پروژه، یه قیمت منصفانه و شفاف اعلام کنم 💖</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>ساعت کاریت کِیه؟</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>هر روز از ساعت ۱۰ صبح تا ۸ شب پاسخگو هستم 🌸 اگه پاسخ ندادم، بعداً تماس بگیر.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- تماس -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">تماس با من</h2>
+      
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <p class="contact-label">شماره تماس من</p>
+        <a href="tel:09363707713" class="contact-number" dir="ltr">
+          0936 370 7713
+        </a>
+        <p class="contact-hint">برای هماهنگی، تماس بگیر 💖</p>
+        
+        <div class="contact-actions">
+          <a href="tel:09363707713" class="contact-btn call-btn">
+            <span>📞</span> تماس
+          </a>
+          <button class="contact-btn copy-btn" onclick="copyPhone()">
+            <span>📋</span> کپی شماره
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- فوتر -->
+  <footer class="footer">
+    <p>ساخته شده با ❤️ توسط زهرا © 1405</p>
+  </footer>
+
+  <!-- دکمه شناور تلگرام -->
+<a href="https://t.me/madeby_zahraa" 
+   class="telegram-btn" 
+   target="_blank" 
+   rel="noopener" 
+   aria-label="تلگرام">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    <path fill="currentColor" d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+  </svg>
+</a>
+
+  <!-- چت‌بات -->
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()" aria-label="چت">
+    <span class="chat-icon">💬</span>
+    <span class="chat-badge" id="chatBadge">1</span>
+  </button>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-avatar">🤖</div>
+      <div class="chat-info">
+        <strong>دستیار زهرا</strong>
+        <span class="chat-status">آنلاین</span>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">
+        سلام! 👋 من دستیار زهرا هستم. چطور می‌تونم کمکت کنم؟
+      </div>
+    </div>
+
+    <div class="chat-quick">
+      <button onclick="quickReply('خدمات')">🎨 خدمات</button>
+      <button onclick="quickReply('قیمت')">💰 قیمت</button>
+      <button onclick="quickReply('شماره')">📞 شماره</button>
+      <button onclick="quickReply('درباره')">🌸 درباره</button>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="پیامت رو بنویس..." onkeypress="handleChatKey(event)">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
